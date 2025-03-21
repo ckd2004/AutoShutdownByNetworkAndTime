@@ -1,5 +1,36 @@
 # AutoShutdownByNetworkAndTime
-SHUTDOWN
+
+This script automatically monitors network status and system time conditions to trigger a shutdown when preset criteria are met. By ensuring the system is only active during required periods, it conserves energy and enhances overall system safety.
+
+## Features
+- Monitors network connectivity.
+- Triggers shutdown based on preset time intervals.
+- Offers flexible configuration of network and time criteria.
+
+## Usage
+1. Modify the network detection and time settings in the script to fit your environment.
+2. Run the script in an administrator command prompt to ensure it has the necessary permissions.
+3. The script continuously monitors the conditions and will execute a shutdown when all preset conditions are met.
+
+## Important Notes
+- Always back up important data to avoid losing unsaved work due to an automated shutdown.
+- Ensure the script is executed with sufficient permissions; otherwise, the shutdown command might fail.
+- Regularly review the network settings and time parameters to ensure proper operation.
+
+## Changelog
+- Initial version: Implemented auto-shutdown based on network status and time conditions.
+- Future versions: Enhancements and optimizations based on user feedback and runtime analysis.
+
+## Default Settings
+- Permission Elevation: Requires administrator privileges.
+- Process Monitoring: Before shutdown, specified programs are closed (configurable via the `process_names` list in the `main` function).
+- Network Check: Uses administrative rights to check for network connectivity.
+- To run the script, use the command:  
+    Python main.py <check interval (s)> <network URL (default: www.baidu.com)>  
+    An interval above 60 seconds will be automatically converted into minutes.
+- The check interval is randomized between half the user-defined interval and the full value.
+- Shutdown times are fixed at 9:30 PM (if the network is disconnected) and 10:00 PM (forced shutdown). Adjust the time-check logic in the `check_time` function as needed.
+
 ## 功能介绍
 该脚本自动监控网络状态及系统时间条件，根据预设条件自动执行关机操作，确保在无用时段自动节省能源并保障系统安全。
 
