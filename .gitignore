@@ -1,0 +1,32 @@
+# 编译生成文件及中间文件
+*.exe
+*.dll
+*.obj
+*.o
+*.so
+*.pdb
+
+# 输出目录
+bin/
+obj/
+out/
+
+# 日志、缓存及临时文件
+*.log
+*.tmp
+*.cache
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 用户配置文件（防止将本地配置纳入版本管理）
+*.user
+*.suo
+*.local
+config.local.json
+
+# 其他可能的临时文件
+*.bak
+*.old
