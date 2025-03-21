@@ -16,6 +16,7 @@ This script automatically monitors network status and system time conditions to 
 - Always back up important data to avoid losing unsaved work due to an automated shutdown.
 - Ensure the script is executed with sufficient permissions; otherwise, the shutdown command might fail.
 - Regularly review the network settings and time parameters to ensure proper operation.
+- This is a privilege escalation script. Before running it, please ensure you have sufficient permissions, understand the risks of granting this script administrator privileges on Windows, and know how to mitigate potential dangers.
 
 ## Changelog
 - Initial version: Implemented auto-shutdown based on network status and time conditions.
