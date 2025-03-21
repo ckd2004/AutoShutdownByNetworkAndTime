@@ -1,0 +1,2 @@
+# AutoShutdownByNetworkAndTime
+SHUTDOWN
